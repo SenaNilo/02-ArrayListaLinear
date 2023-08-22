@@ -105,17 +105,17 @@ void inserirElemento()
 // deve ser implementada como resposta ao exercicio
 void buscarElemento()
 {
-  int buscarNum;
-  bool search = false;
-  cout << "Pesquisar numero: \n";
-  cin >> buscarNum;
-  for(int i = 0; i < nElementos; i++){
-    if(buscarNum == lista[i]){
-      search = true;
-      cout << "Numero encontrado na posição: " << i;
-    }
-  }
-  if(search == false){
-    cout << "Não existe esse numero na lista";
-  }
+	int buscarNum;
+	bool search = false;
+	cout << "Pesquisar numero: \n";
+	cin >> buscarNum;
+	for(int i = 0; i < nElementos; i++){
+	if(buscarNum == lista[i]){
+		search = true;
+		cout << "Numero encontrado na posição: " << i << endl;
+	}
+	}
+	if(search == false){
+	cout << "Não existe esse numero na lista \n";
+	}
 }
